@@ -12,8 +12,9 @@ const app = express();
 initializeApp({
   credential: cert(serviceAccount)
 });
+
 const db = getFirestore();
-const s = db.collection("signup1")
+const s = db.collection("signup1");
 
 app.set('viewengine','ejs');
 app.use(bp.json());
